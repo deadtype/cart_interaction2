@@ -1,3 +1,7 @@
+.mobile_menu_container {
+	background: black;
+}
+
 .site_wide_nav.big_screen {
 	display: none;
 }
@@ -8,17 +12,17 @@
 
 nav[role=navigation] {
 	clear: both;
-	-webkit-transition: all 0.1s ease;
-	-moz-transition: all 0.1s ease;
-	-ms-transition: all 0.1s ease;
-	-o-transition: all 0.1s ease;
-	transition: all 0.1s ease;
+	-webkit-transition: height 0.3s ease;
+	-moz-transition: height 0.3s ease;
+	-ms-transition: height 0.3s ease;
+	-o-transition: height 0.3s ease;
+	transition: height 0.3s ease;
 }
 
 .mobile_menu {
 	@extend .headline;
 	font-size: .65em;
-	margin: 2.75em 0 1.75em;
+	margin: 2.2em 0 2.35em;
 	position: relative;
 	.mobile_logo_container {
 		position: absolute;
