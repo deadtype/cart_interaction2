@@ -1,0 +1,106 @@
+.main_header {
+	padding-top: .8em;
+	padding-bottom: .75em;
+	position: fixed;
+	width: 100%;
+	background: hsla(0,0%,100%, .9);
+	border-top: 6px solid black;
+	z-index: 1000;
+}
+
+.logo_container {
+	float: left;
+}
+
+.logo, .logo_word {
+	img {vertical-align: top;}
+}
+.logo {
+	width: .5em;
+}
+
+.logo_word {
+	width: 5.5em;
+	a {
+		display: block;
+		line-height: 1;
+	}
+}
+
+.logo_meta_info {
+	@extend .headline;
+	width: 100%;
+	line-height:1.2;
+	font-size: .45em;
+	color: #333;
+	margin-top: -.25em;
+	margin-left: .05em;
+	float: left;
+	color: #888;
+}
+
+.site_header_container {
+	width:100%;
+}
+
+.site_wide_nav  {
+	float: right;
+	margin-top: .4em;
+	@extend .headline;
+	font-size: .6em;
+	a {
+		text-decoration: none;
+		display: inline-block;
+		float: left;
+	}
+	span {
+		line-height: 1;
+		display: inline-block;
+		white-space: nowrap;
+		padding: .45em .85em;
+		border: 1px solid lightgray;
+		border-radius: 2px;
+		-webkit-transition: all 0.3s ease-out;
+		-moz-transition: all 0.3s ease-out;
+		-o-transition: all 0.3s ease-out;
+		-ms-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+	}
+	a + a {
+		margin-left: 1.1em;
+	}
+	a:hover span {
+		border: 1px solid black;
+	}
+	.active span {
+		border: 1px solid black;
+		border-radius: 1px;
+		background: black;
+		color: white;
+		a {color: white;}
+	}
+}
+
+.regular_button {
+	@extend .site_wide_nav;
+	float: left;
+
+}
+
+.green_button {
+		@extend .site_wide_nav;
+		float: left;
+		span {border-color: $button-green; background: $button-green;}
+		a:hover span {border-color: $button-hover-green; background: $button-hover-green;}
+		span {color: white;}
+}
+.active_button {
+		@extend .site_wide_nav;
+		float: left;
+
+		span {border-color: #333; background: #333;}
+		a:hover span {border-color: #111; background: #111;}
+		span {color: white;}
+}
+
+
