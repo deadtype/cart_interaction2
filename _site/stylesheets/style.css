@@ -459,7 +459,7 @@ http://0to255.com/
 /*********************
 TYPOGRAPHY
 *********************/
-.headline, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, .subtitle, .navigation, .archive_title, .archive_subtitle, .nav, .published_on .vcard, .published_on .next, .published_on .time, .grid_title, .logo_meta_info, .site_wide_nav, .regular_button, .green_button, .active_button, .search input, .meta, .search_result_summary, .wine_title, .wine_winery_meta, .wine_meta, .wine_action, .mobile_menu {
+.headline, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, .subtitle, .navigation, .archive_title, .archive_subtitle, .nav, .published_on .vcard, .published_on .next, .published_on .time, .grid_title, .logo_meta_info, .site_wide_nav, .regular_button, .green_button, .active_button, #cd-cart .wine_action .remove_button, #cd-cart .wine_action .add_button, #cd-cart .wine_action .subtract_button, .search input, .meta, .search_result_summary, .wine_title, .wine_winery_meta, .wine_meta, .wine_action, .mobile_menu, #cd-cart .store_meta_info, #cd-cart .cart_item_total {
   font-family: "futura-pt",sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -1004,15 +1004,15 @@ NAVIGATION STYLES
 .site_header_container {
   width: 100%; }
 
-.site_wide_nav, .regular_button, .green_button, .active_button {
+.site_wide_nav, .regular_button, .green_button, .active_button, #cd-cart .wine_action .remove_button, #cd-cart .wine_action .add_button, #cd-cart .wine_action .subtract_button {
   float: right;
   margin-top: .4em;
   font-size: .6em; }
-  .site_wide_nav a, .regular_button a, .green_button a, .active_button a {
+  .site_wide_nav a, .regular_button a, .green_button a, .active_button a, #cd-cart .wine_action .remove_button a, #cd-cart .wine_action .add_button a, #cd-cart .wine_action .subtract_button a {
     text-decoration: none;
     display: inline-block;
     float: left; }
-  .site_wide_nav span, .regular_button span, .green_button span, .active_button span {
+  .site_wide_nav span, .regular_button span, .green_button span, .active_button span, #cd-cart .wine_action .remove_button span, #cd-cart .wine_action .add_button span, #cd-cart .wine_action .subtract_button span {
     line-height: 1;
     display: inline-block;
     white-space: nowrap;
@@ -1024,16 +1024,16 @@ NAVIGATION STYLES
     -o-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out; }
-  .site_wide_nav a + a, .regular_button a + a, .green_button a + a, .active_button a + a {
+  .site_wide_nav a + a, .regular_button a + a, .green_button a + a, .active_button a + a, #cd-cart .wine_action .remove_button a + a, #cd-cart .wine_action .add_button a + a, #cd-cart .wine_action .subtract_button a + a {
     margin-left: 1.1em; }
-  .site_wide_nav a:hover span, .regular_button a:hover span, .green_button a:hover span, .active_button a:hover span {
+  .site_wide_nav a:hover span, .regular_button a:hover span, .green_button a:hover span, .active_button a:hover span, #cd-cart .wine_action .remove_button a:hover span, #cd-cart .wine_action .add_button a:hover span, #cd-cart .wine_action .subtract_button a:hover span {
     border: 1px solid black; }
-  .site_wide_nav .active span, .regular_button .active span, .green_button .active span, .active_button .active span {
+  .site_wide_nav .active span, .regular_button .active span, .green_button .active span, .active_button .active span, #cd-cart .wine_action .remove_button .active span, #cd-cart .wine_action .add_button .active span, #cd-cart .wine_action .subtract_button .active span {
     border: 1px solid black;
     border-radius: 3px;
     background: black;
     color: white; }
-    .site_wide_nav .active span a, .regular_button .active span a, .green_button .active span a, .active_button .active span a {
+    .site_wide_nav .active span a, .regular_button .active span a, .green_button .active span a, .active_button .active span a, #cd-cart .wine_action .remove_button .active span a, #cd-cart .wine_action .add_button .active span a, #cd-cart .wine_action .subtract_button .active span a {
       color: white; }
 
 .regular_button {
@@ -1050,15 +1050,15 @@ NAVIGATION STYLES
   .green_button span {
     color: white; }
 
-.active_button {
+.active_button, #cd-cart .wine_action .remove_button, #cd-cart .wine_action .add_button, #cd-cart .wine_action .subtract_button {
   float: left; }
-  .active_button span {
+  .active_button span, #cd-cart .wine_action .remove_button span, #cd-cart .wine_action .add_button span, #cd-cart .wine_action .subtract_button span {
     border-color: #333;
     background: #333; }
-  .active_button a:hover span {
+  .active_button a:hover span, #cd-cart .wine_action .remove_button a:hover span, #cd-cart .wine_action .add_button a:hover span, #cd-cart .wine_action .subtract_button a:hover span {
     border-color: #111;
     background: #111; }
-  .active_button span {
+  .active_button span, #cd-cart .wine_action .remove_button span, #cd-cart .wine_action .add_button span, #cd-cart .wine_action .subtract_button span {
     color: white; }
 
 li.current-menu-item, .section_header, .single_article #menu-item-171 {
@@ -1272,7 +1272,7 @@ li.current-menu-item, .section_header, .single_article #menu-item-171 {
 .mobile_menu_container {
   background: black; }
 
-.site_wide_nav.big_screen, .big_screen.regular_button, .big_screen.green_button, .big_screen.active_button {
+.site_wide_nav.big_screen, .big_screen.regular_button, .big_screen.green_button, .big_screen.active_button, #cd-cart .wine_action .big_screen.remove_button, #cd-cart .wine_action .big_screen.add_button, #cd-cart .wine_action .big_screen.subtract_button {
   display: none; }
 
 .small_screen {
@@ -1327,7 +1327,7 @@ nav[role=navigation].active {
   .small_screen, .mobile_menu {
     display: none; }
 
-  .site_wide_nav.big_screen, .big_screen.regular_button, .big_screen.green_button, .big_screen.active_button {
+  .site_wide_nav.big_screen, .big_screen.regular_button, .big_screen.green_button, .big_screen.active_button, #cd-cart .wine_action .big_screen.remove_button, #cd-cart .wine_action .big_screen.add_button, #cd-cart .wine_action .big_screen.subtract_button {
     display: block; }
 
   .js nav[role=navigation] {
@@ -1534,9 +1534,8 @@ xheader
   position: fixed;
   top: 0;
   height: 100%;
-  width: 260px;
+  width: 90%;
   /* header height */
-  padding-top: 50px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -1546,7 +1545,7 @@ xheader
       width: 60%; } }
   @media only screen and (min-width: 1200px) {
     #cd-cart {
-      width: 60%;
+      width: 45%;
       /* header height has changed */ } }
 
 #cd-cart {
@@ -1564,12 +1563,64 @@ xheader
     font-size: 0.875rem;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 1em 0; }
-  #cd-cart .cd-cart-items {
+    margin: 1em 3.25rem;
+    padding: 0;
+    margin-top: 2.5em; }
+  #cd-cart .store_meta_info {
+    font-size: .6em; }
+    #cd-cart .store_meta_info .meta_store_label {
+      float: left; }
+    #cd-cart .store_meta_info .meta_store_total {
+      text-align: right;
+      float: right;
+      line-height: 1; }
+      #cd-cart .store_meta_info .meta_store_total .store_total {
+        font-size: 2em; }
+  #cd-cart .cart_store_group {
+    margin-bottom: 3em; }
+  #cd-cart .wine_info {
+    width: 100%; }
+  #cd-cart .wine_image {
+    width: 10%; }
+  #cd-cart .wine_title {
+    font-size: 1em; }
+  #cd-cart .product_meta_info {
+    float: left; }
+  #cd-cart .wine_info_container {
+    float: left;
+    width: 90%;
+    margin-top: .5em; }
+    @media only screen and (min-width: 768px) {
+      #cd-cart .wine_info_container {
+        width: auto;
+        margin-top: 0; } }
+  #cd-cart .wine_action {
+    margin-top: .65em; }
+    #cd-cart .wine_action .subtract_button, #cd-cart .wine_action .add_button {
+      float: right; }
+    #cd-cart .wine_action .add_button {
+      margin-left: .25em; }
+  #cd-cart .cart_item_total {
+    font-size: .8em;
+    text-align: right; }
+  #cd-cart .cart_items_container {
+    max-height: calc(100% - 270px);
+    height: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 1em 3.25rem;
     padding: 0; }
+  #cd-cart .store_title {
+    background: lightgray;
+    padding: .5em; }
+  #cd-cart .meta_store_total {
+    float: right; }
+  #cd-cart .cd-cart-items {
+    padding: 0;
+    list-style-type: none; }
     #cd-cart .cd-cart-items li {
       position: relative;
-      padding: 1em;
+      padding: 1em 0;
       border-top: 1px solid #e0e6ef; }
       #cd-cart .cd-cart-items li:last-child {
         border-bottom: 1px solid #e0e6ef; }
@@ -1593,6 +1644,11 @@ xheader
     background: url("../img/cd-remove-item.svg") no-repeat center center; }
     .no-touch #cd-cart .cd-item-remove:hover {
       background-color: #e0e6ef; }
+  #cd-cart .cart_control {
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    width: 100%; }
   #cd-cart .cd-cart-total {
     padding-top: 1em;
     padding-bottom: 1em; }
@@ -1622,7 +1678,7 @@ xheader
     #cd-cart > * {
       padding: 0 2em; }
     #cd-cart .cd-cart-items li {
-      padding: 1em 2em; }
+      margin: 1em 0; }
     #cd-cart .cd-item-remove {
       right: 2em; } }
 

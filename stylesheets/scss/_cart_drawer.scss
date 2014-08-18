@@ -46,11 +46,9 @@ xheader
 	position: fixed;
 	top: 0;
 	height: 100%;
-	width: 260px;
+	width: 90%;
 
 	/* header height */
-	padding-top: 50px;
-
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
 
@@ -63,7 +61,7 @@ xheader
 	}
 
 	@include MQ(L) {
-		width: 60%;
+		width: 45%;
 
 		/* header height has changed */
 	}
@@ -89,15 +87,102 @@ xheader
 		@include font-size(14px);
 		font-weight: bold;
 		text-transform: uppercase;
-		margin: 1em 0;
+		margin: 1em 3.25rem;
+		padding: 0;
+		margin-top: 2.5em;
+	}
+
+	.store_meta_info {
+		@extend .headline;
+		font-size: .6em;
+
+		.meta_store_label {
+			float: left;
+		}
+		.meta_store_total {
+			text-align: right;
+			float: right;
+			line-height: 1;
+			.store_total {
+				font-size: 2em;
+			}
+		}
+	}
+
+
+	.cart_store_group {
+		margin-bottom: 3em;
+	}
+
+	.wine_info {
+		width: 100%;
+	}
+	.wine_image {
+		width: 10%;
+	}
+	.wine_title {
+		font-size: 1em;
+	}
+	.product_meta_info {
+		float: left;
+	}
+	.wine_info_container {
+		float: left;
+		width: 90%;
+		margin-top: .5em;
+
+		@include MQ(M) {
+			width: auto;
+			margin-top: 0;
+		}
+	}
+	.wine_action {
+		margin-top: .65em;
+		.remove_button, .add_button, .subtract_button {
+			@extend .active_button;
+		}
+		.subtract_button, .add_button {
+			float: right;
+		}
+		.add_button {
+			margin-left: .25em;
+		}
+	}
+
+	.active_button + .active_button {
+	}
+	.cart_item_total {
+		@extend .headline;
+		font-size: .8em;
+		text-align: right;
+	}
+
+	.cart_items_container {
+		max-height: calc(100% - 270px);
+		height: auto;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		margin: 1em 3.25rem;
+		padding: 0;
+
+	}
+
+	.store_title {
+		background: lightgray;
+		padding: .5em;
+	}
+
+	.meta_store_total {
+		float: right;
 	}
 
 	.cd-cart-items {
 		padding: 0;
+		list-style-type: none;
 
 		li {
 			position: relative;
-			padding: 1em;
+			padding: 1em 0;
 			border-top: 1px solid $border;
 
 			&:last-child {
@@ -126,6 +211,13 @@ xheader
 		.no-touch &:hover {
 			background-color: $border;
 		}
+	}
+
+	.cart_control {
+		position: absolute;
+		bottom: 0;
+		padding: 0;
+		width: 100%;
 	}
 
 	.cd-cart-total {
@@ -172,7 +264,7 @@ xheader
 		}
 
 		.cd-cart-items li {
-			padding: 1em 2em;
+			margin: 1em 0;
 		}
 
 		.cd-item-remove {
