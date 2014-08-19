@@ -1651,7 +1651,8 @@ xheader
     width: 100%; }
   #cd-cart .cd-cart-total {
     padding-top: 1em;
-    padding-bottom: 1em; }
+    padding-bottom: 1em;
+    margin: 1em 3.25rem; }
     #cd-cart .cd-cart-total span {
       float: right; }
     #cd-cart .cd-cart-total::after {
@@ -1659,6 +1660,10 @@ xheader
       content: '';
       display: table;
       clear: both; }
+  #cd-cart .footer_button {
+    position: absolute;
+    right: 3.25rem;
+    bottom: 1rem; }
   #cd-cart .checkout-btn {
     display: block;
     width: 100%;

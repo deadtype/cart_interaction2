@@ -223,6 +223,7 @@ xheader
 	.cd-cart-total {
 		padding-top: 1em;
 		padding-bottom: 1em;
+		margin: 1em 3.25rem;
 
 		span {
 			float: right;
@@ -233,6 +234,12 @@ xheader
 			display: table;
 			clear: both;
 		}
+	}
+
+	.footer_button {
+		position: absolute;
+		right: 3.25rem;
+		bottom: 1rem;
 	}
 
 	.checkout-btn {
